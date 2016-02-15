@@ -30,5 +30,5 @@ def plot_weather_data(turnstile_weather):
     subset, about 1/3 of the actual data in the turnstile_weather dataframe.
     '''
 
-    plot = # your code here
+    plot = ggplot(turnstile_weather, aes('Hour','ENTRIESn_hourly', color='UNIT')) + geom_point() + geom_line() + ggtitle('Home Runs By Teams') + xlab('Hour') + ylab('ENTRIES hourly')
     return plot
